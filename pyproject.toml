@@ -29,10 +29,10 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/YuanAqi/game-mode-cleaner"
-Repository = "https://github.com/YuanAqi/game-mode-cleaner"
-Issues = "https://github.com/YuanAqi/game-mode-cleaner/issues"
-Changelog = "https://github.com/YuanAqi/game-mode-cleaner/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/TheCleverJay/game-mode-cleaner"
+Repository = "https://github.com/TheCleverJay/game-mode-cleaner"
+Issues = "https://github.com/TheCleverJay/game-mode-cleaner/issues"
+Changelog = "https://github.com/TheCleverJay/game-mode-cleaner/blob/main/CHANGELOG.md"
 
 [project.scripts]
 game-mode-cleaner = "game_mode_cleaner.cli:main"

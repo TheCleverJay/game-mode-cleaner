@@ -14,7 +14,7 @@
 ## 开发
 
 ```bash
-git clone https://github.com/YuanAqi/game-mode-cleaner.git
+git clone https://github.com/TheCleverJay/game-mode-cleaner.git
 cd game-mode-cleaner
 PYTHONPATH=src python3 tests/test_smoke.py
 ./scripts/smoke.sh
