@@ -6,7 +6,7 @@
 Quiet background apps that steal RAM/CPU before you launch a game. **Dry-run / preview by default.** Customizable keep-alive exclusions. Primary OS: **Windows** (double-click `.bat`). Linux helper is secondary.
 
 - English · [中文](./README.zh-CN.md)
-- License: MIT · Python ≥ 3.10 (optional CLI) · Proposed GitHub: [`YuanAqi/game-mode-cleaner`](https://github.com/YuanAqi/game-mode-cleaner)
+- License: MIT · Python ≥ 3.10 (optional CLI) · Proposed GitHub: [`TheCleverJay/game-mode-cleaner`](https://github.com/TheCleverJay/game-mode-cleaner)
 
 ---
 

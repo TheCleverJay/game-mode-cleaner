@@ -7,7 +7,7 @@
 
 - 中文 · [English](./README.md)
 - 许可：MIT · 主要支持：**Windows**（双击 `.bat` 即可）· Linux 为次要辅助
-- 仓库：[`YuanAqi/game-mode-cleaner`](https://github.com/YuanAqi/game-mode-cleaner)
+- 仓库：[`TheCleverJay/game-mode-cleaner`](https://github.com/TheCleverJay/game-mode-cleaner)
 
 ---
 
