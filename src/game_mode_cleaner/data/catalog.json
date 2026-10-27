@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "never_kill": [
+    "System",
+    "Registry",
+    "smss.exe",
+    "csrss.exe",
+    "wininit.exe",
+    "winlogon.exe",
+    "services.exe",
+    "lsass.exe",
+    "svchost.exe",
+    "fontdrvhost.exe",
+    "dwm.exe",
+    "explorer.exe",
+    "Memory Compression",
+    "Secure System",
+    "MsMpEng.exe",
+    "NisSrv.exe",
+    "SecurityHealthService.exe",
+    "SecurityHealthSystray.exe",
+    "MsSense.exe",
+    "SenseNdr.exe",
+    "WmiPrvSE.exe",
+    "conhost.exe",
+    "sihost.exe",
+    "taskhostw.exe",
+    "RuntimeBroker.exe",
+    "SearchHost.exe",
+    "StartMenuExperienceHost.exe",
+    "ShellExperienceHost.exe",
+    "TextInputHost.exe",
+    "ctfmon.exe",
+    "audiodg.exe",
+    "spoolsv.exe",
+    "LsaIso.exe",
+    "SgrmBroker.exe",
+    "vmcompute.exe",
+    "vmwp.exe",
+    "GameBar.exe",
+    "GameBarFTServer.exe",
+    "gamingservices.exe",
+    "gamingservicesnet.exe"
+  ],
+  "presets": {
+    "light": {
+      "description": "Known high-RAM interrupters only (browsers idle tabs helpers, cloud sync, RGB, updaters).",
+      "groups": [
+        "browsers_helpers",
+        "cloud_sync",
+        "rgb_overlay",
+        "updaters",
+        "telemetry_light"
+      ]
+    },
+    "aggressive": {
+      "description": "Broader interrupter set still excluding never-kill (adds Discord overlay helpers, indexers, launchers staying resident).",
+      "groups": [
+        "browsers_helpers",
+        "cloud_sync",
+        "rgb_overlay",
+        "updaters",
+        "telemetry_light",
+        "chat_overlay",
+        "indexers",
+        "launchers_resident",
+        "office_background"
+      ]
+    },
+    "custom": {
+      "description": "Only names listed in config / --exclude-file reverse: you supply the target list via --targets-file; otherwise no interrupters.",
+      "groups": []
+    }
+  },
+  "groups": {
+    "browsers_helpers": {
+      "label": "Browser helper / crashpad (not main browser if excluded)",
+      "names": [
+        "chrome_crashpad_handler.exe",
+        "GoogleCrashHandler.exe",
+        "GoogleCrashHandler64.exe",
+        "software_reporter_tool.exe",
+        "elevation_service.exe",
+        "msedgewebview2.exe",
+        "MicrosoftEdgeUpdate.exe",
+        "browser_broker.exe",
+        "firefox.exe",
+        "chrome.exe",
+        "msedge.exe",
+        "brave.exe",
+        "opera.exe",
+        "vivaldi.exe"
+      ]
+    },
+    "cloud_sync": {
+      "label": "Cloud sync agents",
+      "names": [
+        "OneDrive.exe",
+        "OneDriveStandaloneUpdater.exe",
+        "Dropbox.exe",
+        "DropboxUpdate.exe",
+        "GoogleDriveFS.exe",
+        "googledrivesync.exe",
+        "iCloudServices.exe",
+        "iCloudDrive.exe",
+        "BaiduNetdisk.exe",
+        "BaiduNetdiskUnite.exe",
+        "aDrive.exe",
+        "QuarkCloudDrive.exe"
+      ]
+    },
+    "rgb_overlay": {
+      "label": "RGB / peripheral overlay software",
+      "names": [
+        "ArmouryCrate.UserSessionHelper.exe",
+        "ArmouryCrate.exe",
+        "LightingService.exe",
+        "Razer Synapse.exe",
+        "RazerCentral.exe",
+        "RzSDKServer.exe",
+        "RzSDKService.exe",
+        "Corsair.Service.exe",
+        "iCUE.exe",
+        "LgHub.exe",
+        "lghub_agent.exe",
+        "MSIAfterburner.exe",
+        "RTSS.exe",
+        "EncoderServer.exe"
+      ]
+    },
+    "updaters": {
+      "label": "Background updaters",
+      "names": [
+        "AdobeUpdateService.exe",
+        "Adobe Desktop Service.exe",
+        "CCXProcess.exe",
+        "Creative Cloud.exe",
+        "SteamService.exe",
+        "steamwebhelper.exe",
+        "EpicGamesUpdater.exe",
+        "EpicWebHelper.exe",
+        "OriginWebHelperService.exe",
+        "OriginThinSetupInternal.exe",
+        "GalaxyClient Helper.exe",
+        "GalaxyClient.exe",
+        "Battle.net Update Agent.exe"
+      ]
+    },
+    "telemetry_light": {
+      "label": "Optional telemetry / CEF helpers",
+      "names": [
+        "CompatTelRunner.exe",
+        "DeviceCensus.exe",
+        "YourPhone.exe",
+        "PhoneExperienceHost.exe",
+        "Widgets.exe",
+        "WidgetService.exe"
+      ]
+    },
+    "chat_overlay": {
+      "label": "Chat / voice overlays (keep Discord itself if excluded)",
+      "names": [
+        "Discord.exe",
+        "Slack.exe",
+        "Teams.exe",
+        "ms-teams.exe",
+        "Telegram.exe",
+        "WeChat.exe",
+        "Weixin.exe",
+        "QQ.exe",
+        "QQProtect.exe"
+      ]
+    },
+    "indexers": {
+      "label": "Desktop search / indexers (user-mode)",
+      "names": [
+        "SearchIndexer.exe",
+        "SearchProtocolHost.exe",
+        "SearchFilterHost.exe",
+        "Everything.exe",
+        "Listary.exe",
+        "Wox.exe",
+        "PowerToys.exe",
+        "PowerToys.PowerLauncher.exe"
+      ]
+    },
+    "launchers_resident": {
+      "label": "Game launchers staying resident after exit",
+      "names": [
+        "steam.exe",
+        "EpicGamesLauncher.exe",
+        "Origin.exe",
+        "EADesktop.exe",
+        "Battle.net.exe",
+        "UbisoftConnect.exe",
+        "upc.exe",
+        "GalaxyClient.exe",
+        "RiotClientServices.exe",
+        "LeagueClientUx.exe"
+      ]
+    },
+    "office_background": {
+      "label": "Office / productivity background",
+      "names": [
+        "OfficeClickToRun.exe",
+        "AppVShNotify.exe",
+        "EXCEL.EXE",
+        "WINWORD.EXE",
+        "POWERPNT.EXE",
+        "OUTLOOK.EXE",
+        "ONENOTE.EXE",
+        "Notion.exe",
+        "obsidian.exe"
+      ]
+    }
+  },
+  "restore_hints": {
+    "chrome.exe": "Start Menu → Google Chrome, or: start chrome",
+    "msedge.exe": "Start Menu → Microsoft Edge",
+    "firefox.exe": "Start Menu → Firefox",
+    "Discord.exe": "Start Menu → Discord",
+    "OneDrive.exe": "Start Menu → OneDrive",
+    "steam.exe": "Start Menu → Steam",
+    "iCUE.exe": "Start Menu → iCUE",
+    "Razer Synapse.exe": "Start Menu → Razer Synapse",
+    "Everything.exe": "Start Menu → Everything",
+    "PowerToys.exe": "Start Menu → PowerToys"
+  }
+}

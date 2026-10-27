@@ -1,0 +1,27 @@
+# 游戏模式清理 · 排除名单（不想被关掉的程序）
+# Game Mode Cleaner · keep-alive list
+#
+# 用法 / How to use:
+#   1. 一行一个进程名（可带或不带 .exe）
+#      One process name per line (with or without .exe)
+#   2. # 开头是注释，会被忽略
+#      Lines starting with # are comments
+#   3. 把不想关的程序名加进这个文件，保存后再双击预览/清理
+#      Add names you want to KEEP, save, then run Preview/Apply again
+#
+# 怎么查进程名？任务管理器 → 详细信息 → 名称 列
+# Find names: Task Manager → Details → Name column
+#
+# —— 下面是示例（按需删除 # 以生效）/ examples (uncomment to keep) ——
+
+# Discord.exe
+# chrome.exe
+# msedge.exe
+# steam.exe
+# Everything.exe
+# WeChat.exe
+# QQ.exe
+
+# 你的游戏本体一般不在干扰名单里；若误伤，把游戏进程名写在下面：
+# Your game is usually not in the interrupter list; if hit, add it here:
+# mygame.exe

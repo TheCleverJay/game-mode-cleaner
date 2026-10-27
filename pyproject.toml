@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "game-mode-cleaner"
+version = "0.1.0"
+description = "One-click / CLI helper to quiet background interrupters before gaming (dry-run by default, customizable exclusions)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "YuanAqi" }]
+keywords = ["game-mode", "cleaner", "memory", "windows", "low-spec", "exclusions"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/YuanAqi/game-mode-cleaner"
+Repository = "https://github.com/YuanAqi/game-mode-cleaner"
+Issues = "https://github.com/YuanAqi/game-mode-cleaner/issues"
+Changelog = "https://github.com/YuanAqi/game-mode-cleaner/blob/main/CHANGELOG.md"
+
+[project.scripts]
+game-mode-cleaner = "game_mode_cleaner.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+game_mode_cleaner = ["data/*.json"]

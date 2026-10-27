@@ -1,0 +1,3 @@
+The Python CLI --source mock uses a built-in fake process table
+(chrome, Discord, OneDrive, Steam, iCUE, SearchIndexer, Excel, …)
+so dry-run demos work on Linux CI without Windows.
